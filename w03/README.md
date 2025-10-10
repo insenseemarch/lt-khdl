@@ -3,6 +3,7 @@
 Đây là bài tập báo cáo so sánh tốc độ thực thi của phép nhân ma trận vuông bằng ba phương pháp khác nhau: C, Python thuần túy và NumPy.
 
 **MSSV**: 23120172
+
 **Họ và tên**: Trần Thị Thủy Tiên
 
 ## Cấu trúc thư mục
