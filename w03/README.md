@@ -2,9 +2,6 @@
 
 Đây là bài tập báo cáo so sánh tốc độ thực thi của phép nhân ma trận vuông bằng ba phương pháp khác nhau.
 
-**MSSV**: 23120172
-**Họ và tên**: Trần Thị Thủy Tiên
-
 ## Cấu trúc thư mục
 
 - `matrix_mult.c`: Mã nguồn C cho việc nhân ma trận.
@@ -32,4 +29,5 @@
         - Biên dịch file `matrix_mult.c` thành file thực thi (`matrix_mult.exe` trên Windows hoặc `matrix_mult` trên Linux/macOS).
         - Thực thi file C để lấy kết quả thời gian chạy.
         - Chạy các phiên bản Python thuần và NumPy.
+
         - In ra bảng so sánh kết quả và vẽ biểu đồ trực quan hóa.
