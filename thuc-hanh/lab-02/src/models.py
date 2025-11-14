@@ -32,7 +32,7 @@ def logistic_regression(X, y, lr=0.01, epochs=300):
     for _ in range(epochs):
         z = X @ w
         p = sigmoid(z)
-        grad = (X.T @ (p - y)) / n_samples
+        grad = (X.T @ (p - y)) / n_samples + 0.001 * w
         w -= lr * grad
     return w
 

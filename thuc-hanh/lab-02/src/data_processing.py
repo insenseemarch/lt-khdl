@@ -41,19 +41,12 @@ def fill_mode(col):
     return np.where(col == "", mode, col)
 
 # ============================================================
-# 3) Xử lý giá trị không hợp lệ (experience, last_new_job)
+# 3) Xử lý giá trị không hợp lệ (experience)
 # ============================================================
 def clean_experience(col):
     c = np.char.strip(col.astype(str))
     c = np.where(c == "<1", "0", c)
     c = np.where(c == ">20", "21", c)
-    c = np.where(c == "", "nan", c)
-    return c
-
-def clean_last_new_job(col):
-    c = np.char.strip(col.astype(str))
-    c = np.where(c == "never", "0", c)
-    c = np.where(c == ">4", "5", c)
     c = np.where(c == "", "nan", c)
     return c
 
