@@ -146,7 +146,7 @@ p = \sigma(Wx + b)
 \]
 
 \[
-Loss = - \big(y\ln p + (1-y)\ln(1-p)\big) + \frac{\lambda}{2}\|W\|^2
+Loss = - \big( y \ln p + (1-y)\ln(1-p) \big) + \frac{\lambda}{2}\|W\|^2
 \]
 
 
@@ -238,7 +238,7 @@ Loss curve hội tụ rất ổn định qua 200 epochs
 ---
 
 ## 9. Project Structure
-
+```
 23120172/
 ├── README.md
 ├── requirements.txt
@@ -257,7 +257,7 @@ Loss curve hội tụ rất ổn định qua 200 epochs
     ├── data_processing.py                  # Load CSV, xử lý missing, outliers, encode, scale, FE
     ├── visualization.py                    # Biểu đồ histogram, bar chart, scatter, heatmap
     └── models.py                           # Logistic Regression & KNN (thuần NumPy)
-
+```
 
 ---
 
