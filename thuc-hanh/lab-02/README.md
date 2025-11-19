@@ -23,7 +23,7 @@ Dự án này build trọn pipeline xử lý & phân tích dữ liệu ứng vi�
 7. [Usage](#7-usage)  
 8. [Results](#8-results)  
 9. [Project Structure](#9-project-structure)  
-10. [Challenges & Solutions](#10-challenges-&-solutions)  
+10. [Challenges & Solutions](#10-challenges--solutions)  
 11. [Future Improvements](#11-future-improvements)  
 12. [Contributors](#12-contributors)  
 13. [License](#13-license)
@@ -144,9 +144,11 @@ Trích từ `03_modeling.md`:
 \[
 p = \sigma(Wx + b)
 \]
+
 \[
-Loss = - (y\ln p + (1-y)\ln(1-p)) + \frac{\lambda}{2}\|W\|^2
+Loss = - \big(y\ln p + (1-y)\ln(1-p)\big) + \frac{\lambda}{2}\|W\|^2
 \]
+
 
 Gradient descent + mini-batch.
 - epochs = 200  
@@ -214,7 +216,7 @@ jupyter notebook notebooks/03_modeling.ipynb
     - FP = 0
     - FN = 0
     - TN = 154
-Loss curve hội tụ rất ổn định qua 200 epochs.
+Loss curve hội tụ rất ổn định qua 200 epochs
 
 ---
 
@@ -240,18 +242,22 @@ Loss curve hội tụ rất ổn định qua 200 epochs.
 23120172/
 ├── README.md
 ├── requirements.txt
-├── data/
-│   ├── raw/
-│   └── processed/
-├── notebooks/
-│   ├── 01_data_exploration.ipynb
-│   ├── 02_preprocessing.ipynb
-│   └── 03_modeling.ipynb
-├── src/
-│   ├── __init__.py
-│   ├── data_processing.py
-│   ├── visualization.py
-│   └── models.py
+
+├── data/                                   # Folder chứa dữ liệu
+│   ├── raw/                                # Dữ liệu gốc (tải từ Kaggle)
+│   └── processed/                           # Dữ liệu sau khi tiền xử lý (NumPy)
+
+├── notebooks/                              # Các bước phân tích & modeling
+│   ├── 01_data_exploration.ipynb           # Khám phá dữ liệu (EDA)
+│   ├── 02_preprocessing.ipynb              # Tiền xử lý, encoding, scaling, FE
+│   └── 03_modeling.ipynb                   # Logistic Regression + KNN + Evaluation
+
+└── src/                                    # Source code Python
+    ├── __init__.py                         # Đánh dấu package + export modules
+    ├── data_processing.py                  # Load CSV, xử lý missing, outliers, encode, scale, FE
+    ├── visualization.py                    # Biểu đồ histogram, bar chart, scatter, heatmap
+    └── models.py                           # Logistic Regression & KNN (thuần NumPy)
+
 
 ---
 
@@ -267,20 +273,20 @@ Tự viết:
 
 ### 10.2. Không dùng sklearn
 
-Logistic regression tự viết toàn bộ (loss, grad, update).
+Logistic regression tự viết toàn bộ (loss, grad, update)
 
 ### 10.3. Không dùng SciPy
 
-Viết lại `normal_cdf()`.
+Viết lại `normal_cdf()`
 
 ### 10.4. Không dùng seaborn
 
-Tự build heatmap & biểu đồ bằng matplotlib raw.
+Tự build heatmap & biểu đồ bằng matplotlib raw
 
 ---
 
 ## 11. Future Improvements
-- Thử thêm các mô hình khác: Naive Bayes, SVM (thuần NumPy).
+- Thử thêm các mô hình khác: Naive Bayes, SVM (thuần NumPy)
 
 - Thêm PCA để giảm chiều dữ liệu.
 
