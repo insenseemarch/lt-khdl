@@ -141,13 +141,13 @@ Trích từ `03_modeling.md`:
 
 ### **Logistic Regression – Implement bằng NumPy**
 
-\[
+$$
 p = \sigma(Wx + b)
-\]
+$$
 
-\[
+$$
 Loss = - \big( y \ln p + (1-y)\ln(1-p) \big) + \frac{\lambda}{2}\|W\|^2
-\]
+$$
 
 
 Gradient descent + mini-batch.
