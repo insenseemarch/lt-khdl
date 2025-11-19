@@ -1,5 +1,7 @@
-# 🔍 Dự đoán Xu Hướng Đổi Việc Của Ứng Viên Data Science  
+# Dự đoán Xu Hướng Đổi Việc Của Ứng Viên Data Science  
 ### *Lab 02 – Data Exploration → Preprocessing → Modeling (100% NumPy)*
+
+## 1. Tiêu đề và Mô tả
 
 Dự án này build trọn pipeline xử lý & phân tích dữ liệu ứng viên Data Science từ Kaggle, bao gồm:
 - Khám phá dữ liệu (EDA)
@@ -12,17 +14,19 @@ Dự án này build trọn pipeline xử lý & phân tích dữ liệu ứng vi�
 ---
 
 ## 2. Mục lục
-1. [Giới thiệu](#giới-thiệu)  
-2. [Dataset](#dataset)  
-3. [Quy trình & Phương pháp](#quy-trình--phương-pháp)  
-4. [Installation](#installation)  
-5. [Cách chạy project](#cách-chạy-project)  
-6. [Kết quả chính](#kết-quả-chính)  
-7. [Cấu trúc project](#cấu-trúc-project)  
-8. [Challenges](#challenges)  
-9. [Future Improvements](#future-improvements)  
-10. [Contributor](#contributor)  
-11. [License](#license)
+1. [Tiêu đề và Mô tả](#tiêu-đề-và-mô-tả)  
+2. [Mục lục](#2-mục-lục)  
+3. [Giới thiệu](#3-giới-thiệu)
+4. [Dataset](#4-dataset)  
+5. [Quy trình & Phương pháp](#5-quy-trình-&-phương-pháp)  
+6. [Installation](#6-installation)  
+7. [Usage](#7-usage)  
+8. [Results](#8-results)  
+9. [Project Structure](#9-project-structure)  
+10. [Challenges & Solutions](#10-challenges-&-solutions)  
+11. [Future Improvements](#11-future-improvements)  
+12. [Contributors](#12-contributors)  
+13. [License](#13-license)
 
 ---
 
@@ -291,6 +295,6 @@ Tự build heatmap & biểu đồ bằng matplotlib raw.
 
 ---
 
-## 11. License
+## 13. License
 
 No License
